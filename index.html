@@ -28,11 +28,24 @@
           <li class="contacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
+      <button class="burger-button" type="button">
+        <svg class="burger-icon" width="24" height="24">
+          <use href="./images/icons.svg#burger-menu"></use>
+        </svg>
+      </button>
      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <nav class="mobile-menu-nav">Navigation</nav>
+          <address>Address</address>
+          <div>Soc link</div>
+        </div>
+      </div>
     </header>
 
     <main>
-       <section class="page-hero">
+       <section class="page-hero hiden">
 
         <div class="container">
           <h1 class="page-text">Effective Solutions for Your Business</h1>
@@ -41,7 +54,7 @@
 
        </section>
    
-       <section class="features-section">
+       <section class="features-section hiden">
          <div class="container">
           <h2 class="second-title visually-hidden">Our Features</h2>
            <ul class="features-item">
@@ -100,7 +113,7 @@
          </div>
       </section>
 
-      <section class="team-section">
+      <section class="team-section hiden">
         <div class="container">
           <h2 class="team-title">Our Team</h2> 
           <ul class="team-list">
@@ -285,7 +298,7 @@
     </ul>
 </div>
       </section>
-      <section class="portfolio-section">
+      <section class="portfolio-section hiden">
 <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-list">
@@ -371,7 +384,7 @@
       </section>
     </main>
 
-<footer class="page-footer">
+<footer class="page-footer hiden">
 <div class="container footer-container">
   <div class="footer-web">
         <a class="logo footer-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
@@ -430,7 +443,7 @@
 </div>
 </footer>
 
-<div class="backdrop" data-modal>
+<div class="backdrop hiden" data-modal>
   <div class="modal">
 
     <button class="close-modal-button" type="button" data-modal-close>
@@ -439,7 +452,7 @@
       </svg>
     </button>
     <p class="modal-text">Leave your contacts and we will call you back</p>
-<form>
+<form class="modal-form">
   <div class="form-field-wrapper">
     <label class="label-field" for="user-name">Name</label>
     <div class="field-wrapper">
@@ -491,5 +504,6 @@
 </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
   </body>
 </html>
