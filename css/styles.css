@@ -56,7 +56,9 @@ button {
     padding: 0 15px;
 
 }
-}    
+
+}   
+
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
@@ -71,7 +73,7 @@ button {
 }
 
 .nav-list,
-.contacts-list {
+.contacts {
     display: none;
 }
 
@@ -103,6 +105,7 @@ button {
     fill: #2f2f37;
 }
 
+
 @media screen and (min-widt: 768px) {
     .burger-button {
         display: none;
@@ -116,11 +119,6 @@ button {
     padding: 24px 0;
     margin-right: 120px;
 } 
-    .contacts {
-    font-style: normal;
-
-    display: block;
-}
     .header-nav {
     display: flex;
     align-items: center;
@@ -176,7 +174,7 @@ button {
 
 }
 
-@media screen and (min-width: 1158) {
+@media screen and (min-width: 1158px) {
     .header-logo {
         margin-right: 76px;
     }
