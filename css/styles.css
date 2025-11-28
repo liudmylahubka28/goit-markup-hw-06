@@ -526,12 +526,12 @@ input[type='checkbox']:checked + .label-agreement > .agreement-checkbox {
 .page-hero {
     background-image:  linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-color: #2E2F42;
-    padding: 188px 0;
     display: flex;
-    margin:0 auto;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
-    max-width: 1440px;
+    max-width: 320px;
+    height: 432px;
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover;
@@ -550,13 +550,188 @@ input[type='checkbox']:checked + .label-agreement > .agreement-checkbox {
     letter-spacing: 0.02em;
     color: #ffffff;
     margin-bottom: 72px;
-    margin: 0 auto;
+
 }
 
+.features-section {
+    padding: 96px 0;
+}
+.features-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px;
+}
+.features-link {
+    width: 288px;
+}
+.features-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+    text-align: center;
 
+}
+.features-text {
+   font-weight: 500;
+   font-size: 16px; 
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: #434455;
 
+}
+.icon-list-item {
+    display: none;
+}
+.team-section {
+    background-color: #F4F4FD;
+    padding: 96px 0;
+}
+.team-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+.team-list {
+    display: flex;
+    gap: 72px; 
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
 
+}
+.team-item {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    border-radius: 0px 0px 4px 4px; 
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 
+}
+.team-description {
+    padding: 32px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+.name-team {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #2e2f42;
+text-align: center;
+}
+.team-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+}
+.social-links-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px
+}
+.social-links-item {
+    width: 40px;
+    height: 40px;
+}
+.icon-link {
+    fill: #F4F4FD;
+
+}
+.link-team {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-team:hover,
+.link-team:focus {
+    background-color: #404bbf;
+}
+.portfolio-section {
+    padding: 96px 0;
+}
+.portfolio-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+
+}
+.portfolio-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+.portfolio-item {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+    background-color: #ffffff;
+}
+.portfolio-second-text {
+    color: #f4f4fd;
+    background-color: #4d5ae5; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 40px 32px;
+    transform: translateY(100%);  
+    height: 100%; 
+    width: 100%;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.portfolio-second-description {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-description {
+    padding: 32px 16px;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding: 32px 16px;
+}
+.portfolio-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color:  #2e2f42;
+    margin-bottom: 8px;
+}
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em; 
+    color: #434455;
+}
 
 
 
