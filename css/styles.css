@@ -107,7 +107,7 @@ button {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .burger-button {
         display: none;
     }
@@ -175,7 +175,7 @@ button {
 
 }
 
-@media only screen and (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
     .header-logo {
         margin-right: 76px;
     }
@@ -532,7 +532,7 @@ input[type='checkbox']:checked + .label-agreement > .agreement-checkbox {
    
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .modal {
         width: 408px;
         min-height: 584px;
@@ -546,79 +546,120 @@ input[type='checkbox']:checked + .label-agreement > .agreement-checkbox {
     }
 }
 
-@media only screen and (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
     .text-field {
         padding: 11px 38px;
     }
 
 }
 .page-hero {
-    background-image:  linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-    background-color: #2E2F42;
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    max-width: 320px;
-    height: 432px;
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-size: cover;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: #2e2f42;
+  padding: 72px 0;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+ 
 }
 
-@media only screen and (min-widht: 768px) {
-    .page-hero {
-        padding: 112px 136px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-    }
-    .page-text {
-        max-width: 496px;
-        font-size: 56px;
-        line-height: 1.07;
-        margin-bottom: 36px;
-    }
-}
 @media (min-resolution: 192dpi) {
     .page-hero {
-        background-image:  linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 2x.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .page-hero {
+        padding: 122px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) url(../images/people-office.jpg);
+    }
+
+
+}
+
+@media (min-resolution: 192dpi) {
+    .page-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
     }
 }
 
 @media only screen and (min-width: 1158px) {
-    .page-hero {
+        .page-hero {
         padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-        
+    }
+}
+
+.page-text {
+  font-weight: 700;
+  max-width: 216px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin: 0 auto 46px;
+}
+
+@media screen and (min-width: 768px) {
+    .page-text {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    margin-bottom: 36px;
+    }
+    .hero-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    }
+}
+
+@media screen and (min-width: 1158px) { 
+    .page-hero {
+        padding: 188px 0;
+        max-width: 1440px;
     }
     .page-text {
-        margin-bottom: 48px;
-    }
-
-    
-}
-.page-text {
-    font-size: 36px;
-    max-width: 216px;
-    line-height: 1.12;
-    text-align: center;
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
     letter-spacing: 0.02em;
-    color: #ffffff;
-    margin-bottom: 72px;
-
+    margin-bottom: 48px;
+    }
+    .hero-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    }
 }
+
 
 .features-section {
     padding: 96px 0;
 }
 .features-item {
     display: flex;
+    gap: 72px;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 72px;
+
 }
 .features-link {
     width: 288px;
+}
+.icon-list-item {
+    display: none;
 }
 .features-title {
     font-weight: 700;
@@ -640,14 +681,40 @@ input[type='checkbox']:checked + .label-agreement > .agreement-checkbox {
 }
 
 
-@media only screen and (max-width: 1157px) {
-    .icon-list-item {
-        display: none;
+@media screen and (max-width: 1158px) {
+
+    .features-section {
+        padding: 120px 0;
     }
-    
+    .icon-list-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        border: 1px solid #8e8f99;
+        margin-bottom: 8px;
+        width: 264px;
+    }
+    .features-item {
+        display: flex;
+        gap: 24px;
+    }
+    .features-link {
+        width: 288px;
+}
+    .features-title {
+        font-weight: 500;
+        font-size: 20px;
+
+    }
+    .features-text {
+       font-weight: 400;
+    }
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .features-item {
         column-gap: 24px;
         row-gap: 72px;
@@ -661,32 +728,7 @@ input[type='checkbox']:checked + .label-agreement > .agreement-checkbox {
     
     
 }
-@media only screen and (min-width: 1158px) {
-    .features-section {
-        padding: 120px 0;
-    }
-    .features-link {
-        width: 264px;
-    }
-    .features-title {
-        font-weight: 500;
-        font-size: 20px;
-    }
-    .features-text {
-        font-weight: 400;
-    }
-    .icon-list-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #8e8f99;
-        border-radius: 4px;
-        width: 100%;
-        height: 112px;
-        margin-bottom: 8px;
-        background: #f4f4fd;
-    }
-}
+
 .icon-list-item {
     display: none;
 }
@@ -768,7 +810,7 @@ text-align: center;
 .link-team:focus {
     background-color: #404bbf;
 }
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .team-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -777,7 +819,7 @@ text-align: center;
         row-gap: 64px;
     }
 }
-@media only screen and (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
     .team-section {
         padding: 120px 0;
     }
@@ -857,7 +899,7 @@ text-align: center;
     color: #434455;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .portfolio-list {
         display: flex;
         flex-direction: row;
@@ -872,7 +914,7 @@ text-align: center;
      box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     }
 }
-@media only screen and (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
     .portfolio-section {
         padding: 120px 0;
     }
@@ -888,7 +930,7 @@ text-align: center;
     padding: 96px 0;
     background-color: #2e2f42;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .footer-container {
         display: flex;
         flex-direction: column;
@@ -920,7 +962,7 @@ text-align: center;
     
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .social-links-footer {
         margin: 0 auto;
     }
@@ -955,7 +997,7 @@ text-align: center;
 .icon-link-footer {
     fill: #f4f4fd;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .footer-input-wrapper {
         display: flex;
         flex-direction: column;
@@ -1049,7 +1091,7 @@ text-align: center;
     row-gap: 72px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .page-footer {
         padding: 96px 0 96px 96px;
     }
@@ -1071,7 +1113,7 @@ text-align: center;
     }
 }
 
-@media only screen and (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
     .page-footer {
         padding: 100px 0;
     }
